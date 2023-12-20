@@ -1,4 +1,4 @@
-package model;
+package dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -7,8 +7,9 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class NotificationEmail {
-    private String subject;
-    private String recipient;
-    private String body;
+public class RegisterRequest {
+
+	private String username;
+	private String email;
+	private String password;
 }
