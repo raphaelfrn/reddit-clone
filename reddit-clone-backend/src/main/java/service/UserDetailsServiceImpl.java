@@ -15,6 +15,8 @@ import lombok.AllArgsConstructor;
 import model.User;
 import repository.UserRepository;
 
+import static java.util.Collections.singletonList;
+
 @Service
 @AllArgsConstructor
 public class UserDetailsServiceImpl implements UserDetailsService {

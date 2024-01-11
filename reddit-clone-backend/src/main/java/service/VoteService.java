@@ -6,12 +6,15 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import dto.VoteDto;
+import exceptions.PostNotFoundException;
 import exceptions.SpringRedditException;
 import lombok.AllArgsConstructor;
 import model.Post;
 import model.Vote;
 import repository.PostRepository;
 import repository.VoteRepository;
+
+import static model.VoteType.UPVOTE;
 
 @Service
 @AllArgsConstructor

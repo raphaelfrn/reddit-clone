@@ -6,8 +6,10 @@ import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 
 import dto.CommentsDto;
+import exceptions.PostNotFoundException;
 import exceptions.SpringRedditException;
 import lombok.AllArgsConstructor;
+import mapper.CommentMapper;
 import model.Comment;
 import model.NotificationEmail;
 import model.Post;

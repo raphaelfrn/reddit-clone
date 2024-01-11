@@ -1,5 +1,7 @@
 package service;
 
+import static java.util.stream.Collectors.toList;
+
 import java.util.List;
 
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
@@ -8,8 +10,11 @@ import org.springframework.transaction.annotation.Transactional;
 
 import dto.PostRequest;
 import dto.PostResponse;
+import exceptions.PostNotFoundException;
+import exceptions.SubredditNotFoundException;
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import mapper.PostMapper;
 import model.Post;
 import model.Subreddit;
 import model.User;

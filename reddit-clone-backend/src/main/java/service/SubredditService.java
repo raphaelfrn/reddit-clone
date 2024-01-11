@@ -1,5 +1,7 @@
 package service;
 
+import static java.util.stream.Collectors.toList;
+
 import java.util.List;
 
 import org.springframework.stereotype.Service;
@@ -9,6 +11,7 @@ import dto.SubredditDto;
 import exceptions.SpringRedditException;
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import mapper.SubredditMapper;
 import model.Subreddit;
 import repository.SubredditRepository;
 
